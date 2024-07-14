@@ -12,7 +12,7 @@ export default function Footer() {
             <a href='/' className="text-xl lg:text-2xl xl:text-3xl font-semibold tracking-tighter text-black">Grow <span className="text-green-700">Together</span></a>
           </div>
           <div className='flex sm:justify-end items-center gap-3'>
-            <Button variant="outline" className="w-full md:w-fit">Let's Grow Together</Button>
+            <Button variant="outline" className="w-full md:w-fit">Let&apos;s Grow Together</Button>
           </div>
           <div className="border-t border-neutral-800/20 pt-8 mt-8 md:flex md:items-center md:justify-between lg:col-span-2">
             <p className="text-xs text-neutral-800">
