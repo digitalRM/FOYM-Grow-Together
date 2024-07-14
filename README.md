@@ -1,12 +1,12 @@
-![The Template](https://github.com/digitalRM/FOYM-Template/assets/70782025/a7711b85-544e-4cd2-93cf-86ba294b9d02)
+![Grow Together](https://github.com/user-attachments/assets/4f649350-eba4-4a37-8035-94685e6b2e05)
 
-Template Series - Name #
+Template Series - Grow Together #6
 ---
-This is a base Next.JS build preloaded with Shadcn/UI and a file structure system used for FOYM templates.
+This is a template for organizations modeled after a made-up gardening nonprofit called “Grow Together.” Created by FOYM, a project by Ruslan Mukhamedvaleev, under the MIT license.
 
-![Website Image](https://github.com/digitalRM/FOYM-Template/assets/70782025/95559860-79e0-4033-b128-585cdd2465d1)
+![Website Image](https://github.com/user-attachments/assets/cd9df7bb-6ea3-4fcc-84f1-80eb45ec537c)
 
-Personal Note - Ruslan
+This is the sixth fully open-source template I have created for this template series. It features a left-aligned hero, an information section, a testimonial section, and a frequently asked questions section. - Ruslan
 
 Getting Started
 ---
@@ -24,7 +24,7 @@ To get a local copy up and running, follow these steps:
 Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/digitalRM/FOYM-Grow-Together.git
 ```
 
 Install required packages
@@ -35,13 +35,19 @@ npm install
 
 Customize the entire website across all the sections inside the `components/sections` folder
 ```js
-
-
+1 - Hero.jsx
+2 - OurImpact.jsx
+3 - Testimonials.jsx
+4 - FAQ.jsx
+5 - Footer.jsx
 ```
 
-There are also important files to edit in the `components/ui` folder. They are all marked with 1 in the front. 
+There are also important files to edit in the `components/ui` folder. They are all marked with 1 in the front. The header is marked with three 1's because it is extra important to edit after removing the banner. 
 ```js
-
+1 - contact-dialog.jsx
+1 - gardenChart.jsx
+1 - mobile-drawer.jsx
+111 - header.jsx
 ```
 
 Delete Banner in `app/layout.js`
@@ -62,26 +68,28 @@ Customize your metadata in `app/layout.js`
 ```js
 // This is the metadata for the website. Change the values to match your website. Upload the openGraph.png to your public folder
 export const metadata = {
-  metadataBase: new URL(''),
-  title: " - An FOYM Template",
-  description: "",
+  metadataBase: new URL("https://grow.foym.org/"),
+  title: "Grow Together - An FOYM Template",
+  description:
+    "This is a template for organizations modeled after a made-up gardening nonprofit called “Grow Together.” It is entirely free to use and customize. Created by FOYM, a project by Ruslan Mukhamedvaleev, under the MIT license.",
   openGraph: {
-    title: " - An FOYM Template",
-    description: "",
-    url: '',
-    siteName: ' - An FOYM Template',
-    // images: [
-    //   {
-    //     url: '/openGraph.png',
-    //     width: 1600,
-    //     height: 900,
-    //     alt: 'An image on the the website\s name "Template - FOYM" and star like characters in the background pointing at the name',
-    //   },
-    // ], 
-    locale: 'en_US',
-    type: 'website',
+    title: "Grow Together - An FOYM Template",
+    description:
+      "This is a template for organizations modeled after a made-up gardening nonprofit called “Grow Together.” It is entirely free to use and customize. Created by FOYM, a project by Ruslan Mukhamedvaleev, under the MIT license.",
+    url: "https://grow.foym.org/",
+    siteName: "Grow Together - An FOYM Template",
+    images: [
+      {
+        url: "/openGraph.png",
+        width: 1600,
+        height: 900,
+        alt: 'An image of the websites name "Grow Together - An FOYM Template" and star like characters in the background pointing at the name',
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
-}
+};
 ```
 
 Run the development server
