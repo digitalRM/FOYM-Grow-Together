@@ -19,7 +19,7 @@ export default function Hero() {
             </div>
           </div>
           <div className='sm:w-[570px] mt-12 h-full relative sm:mx-auto'>
-            <img className="w-full h-full object-cover overflow-visible scale-125 lg:scale-100 lg:-mt-12 lg:-ml-56" src="/GardenSVG.svg" alt="A garden with a white picket fence." />
+            <img className="w-full h-full object-cover overflow-visible scale-125 lg:scale-100 lg:-mt-12 lg:-ml-56" src="/GardenSVG.svg" alt="A gardener picking radishes from a garden." />
           </div>
         </div>
       </div>
