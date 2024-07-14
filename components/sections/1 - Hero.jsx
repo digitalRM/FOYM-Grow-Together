@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from '../ui/button'
-import Header from '../ui/111 - header'
 
 export default function Hero() {
   return (

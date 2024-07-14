@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import {
   Drawer,
@@ -9,16 +9,15 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-import { Menu, X } from 'lucide-react'
-import { Button } from './button'
-import { ContactDialog } from './1 - contact-dialog'
-
+} from "@/components/ui/drawer";
+import { Menu, X } from "lucide-react";
+import { Button } from "./button";
+import { ContactDialog } from "./1 - contact-dialog";
 
 export default function MobileDrawer({ ...props }) {
   return (
     <Drawer className="" {...props}>
-      <DrawerTrigger className='mt-2'>
+      <DrawerTrigger className="mt-2">
         <Menu size={24} />
       </DrawerTrigger>
       <DrawerContent>
@@ -32,18 +31,20 @@ export default function MobileDrawer({ ...props }) {
         </DrawerHeader>
         <DrawerFooter>
           <a href="/" className="text-black">
-            <Button variant='outline' className="w-full">Visit Home</Button>
+            <Button variant="outline" className="w-full">
+              Visit Home
+            </Button>
           </a>
           <a href="https://www.foym.org" className="text-black">
-            <Button variant='outline' className="w-full">Apply Now</Button>
+            <Button variant="outline" className="w-full">
+              Apply Now
+            </Button>
           </a>
-          <Button variant='outline' className="w-full">
-            <ContactDialog className="mr-1" />   Us
+          <Button variant="outline" className="w-full">
+            <ContactDialog className="mr-1" /> Us
           </Button>
-          
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
-
-  )
+  );
 }

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -24,16 +24,18 @@ import {
 } from "@/components/ui/drawer";
 import useMediaQuery from "@custom-react-hooks/use-media-query";
 
-
-export function ContactDialog({...props}) {
+export function ContactDialog({ ...props }) {
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 968px)");
 
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger className="tracking-tight text-neutral-700 font-medium cursor-pointer" {...props}> 
-          Contact 
+        <DialogTrigger
+          className="tracking-tight text-neutral-700 font-medium cursor-pointer"
+          {...props}
+        >
+          Contact
         </DialogTrigger>
         <DialogContent className="sm:max-w-[1055px] w-full bg-white">
           <DialogHeader>
@@ -49,10 +51,7 @@ export function ContactDialog({...props}) {
               </span>
             </DialogDescription>
           </DialogHeader>
-          <form
-            className="grid grid-cols-1 gap-y-6"
-            method="Post"
-          >
+          <form className="grid grid-cols-1 gap-y-6" method="Post">
             <div className="sm:col-span-2">
               <label
                 htmlFor="name"
@@ -117,16 +116,15 @@ export function ContactDialog({...props}) {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger
-        className="tracking-tight text-neutral-700 font-medium cursor-pointer" {...props}
+        className="tracking-tight text-neutral-700 font-medium cursor-pointer"
+        {...props}
       >
         Contact
       </DrawerTrigger>
       <DrawerContent className="bg-white">
         <DrawerHeader>
           <DrawerTitle>
-            <span className="text-xl font-semibold text-black">
-              Contact Us
-            </span>
+            <span className="text-xl font-semibold text-black">Contact Us</span>
           </DrawerTitle>
           <DrawerDescription className="mt-4 text-md text-black">
             <span>
@@ -135,10 +133,7 @@ export function ContactDialog({...props}) {
             </span>
           </DrawerDescription>
         </DrawerHeader>
-        <form
-          className="grid grid-cols-1 gap-y-6 px-4"
-          method="Post"
-        >
+        <form className="grid grid-cols-1 gap-y-6 px-4" method="Post">
           <div className="sm:col-span-2">
             <label
               htmlFor="name"

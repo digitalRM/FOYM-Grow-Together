@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { TrendingUp } from "lucide-react";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 import {
   Card,
@@ -10,20 +10,20 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/components/ui/chart";
 const chartData = [
   { Month: "Aug", amount: 52, school: 32 },
   { Month: "Sep", amount: 47, school: 35 },
-  { Month: "Oct", amount: 65, school: 31},
-  { Month: "Nov", amount: 87, school: 43},
-  { Month: "Dec", amount: 93, school: 48},
-]
+  { Month: "Oct", amount: 65, school: 31 },
+  { Month: "Nov", amount: 87, school: 43 },
+  { Month: "Dec", amount: 93, school: 48 },
+];
 
 const chartConfig = {
   amount: {
@@ -34,14 +34,18 @@ const chartConfig = {
     label: "School Gardens",
     color: "#052e16",
   },
-}
+};
 
-export function GardenChart({...props}) {
+export function GardenChart({ ...props }) {
   return (
     <Card className="bg-white" {...props}>
       <CardHeader>
-        <CardTitle className="tracking-tighter">Community Gardens Started</CardTitle>
-        <CardDescription>We have started over 500 gardens in just the past 5 months.</CardDescription>
+        <CardTitle className="tracking-tighter">
+          Community Gardens Started
+        </CardTitle>
+        <CardDescription>
+          We have started over 500 gardens in just the past 5 months.
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -57,7 +61,7 @@ export function GardenChart({...props}) {
             <ChartTooltip
               cursor={true}
               className="w-48"
-              content={<ChartTooltipContent hideLabel />} 
+              content={<ChartTooltipContent hideLabel />}
             />
             <Bar dataKey="amount" fill="#15803d" radius={8} />
             <Bar dataKey="school" fill="#052e16" radius={8} />
@@ -70,5 +74,5 @@ export function GardenChart({...props}) {
         </div>
       </CardFooter>
     </Card>
-  )
+  );
 }

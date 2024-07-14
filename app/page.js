@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex-col flex w-screen  scroll-smooth">
       {/* Make sure to edit the Header after removing the banner. Intead of top-14 xs:top-10, change it to top-0. */}
-      <Header /> 
+      <Header />
       <Hero />
       <OurImpact />
       <Testimonials />
