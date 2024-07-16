@@ -39,7 +39,7 @@ export default function Testimonials() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-lg font-semibold tracking-tight">{name}</h3>
-                <p className="text-sm text-green-600">{title}</p>
+                <p className="text-sm text-green-800">{title}</p>
               </div>
             </div>
           </div>
