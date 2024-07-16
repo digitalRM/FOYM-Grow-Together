@@ -11,9 +11,9 @@ export default function FAQ() {
     <div className="relative bg-neutral-100 border-y border-neutral-200 text-green-950 w-full pb-14">
       <div className="mx-auto max-w-[1140px] px-6 py-20 lg:py-32 lg:px-8 relative grid gap-12 -mb-12">
         <div className="flex flex-col gap-6 w-full">
-          <h1 className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-bold text-green-800 tracking-tighter text-left">
+          <h2 className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-bold text-green-800 tracking-tighter text-left">
             Frequently Asked Questions.
-          </h1>
+          </h2>
           <p className="text-lg mt-4 tracking-tight text-neutral-900 text-left max-w-[900px]">
             Here are some of the most frequently asked questions about our
             organization and the work we do. If you have a question that is not

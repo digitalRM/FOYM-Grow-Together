@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const testimonials = [
@@ -5,7 +6,7 @@ const testimonials = [
     name: "Brandon Dock",
     title: "Superintendent, The School District",
     image:
-      "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=3024&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540569014015-19a7be504e3a",
     quote:
       "Having gardens on our school campuses has been a game changer for our students. They have learned so much about healthy eating and sustainability and have enjoyed fresh produce from the gardens. We are so grateful for Grow Together's support in helping us start these gardens.",
   },
@@ -13,7 +14,7 @@ const testimonials = [
     name: "Joan Smith",
     title: "Community Leader, The Neighborhood",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=3461&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956",
     quote:
       "The community garden that Grow Together helped us start has brought our neighborhood together in so many ways. We have enjoyed working together to grow fresh produce and have shared many meals together. The garden has genuinely transformed our community for the better.",
   },
@@ -31,14 +32,16 @@ export default function Testimonials() {
             <p className=" text-lg text-left tracking-tight">{quote}</p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-green-800 rounded-full border border-green-700 overflow-hidden">
-                <img
+                <Image
                   src={image}
                   alt={name}
+                  width={48}
+                  height={48}
                   className="w-full h-full object-cover rounded-full grayscale"
                 />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-lg font-semibold tracking-tight">{name}</h3>
+                <h2 className="text-lg font-semibold tracking-tight">{name}</h2>
                 <p className="text-sm text-green-800">{title}</p>
               </div>
             </div>

@@ -17,8 +17,8 @@ export default function Hero() {
               <Button variant="outline" className="w-full lg:w-36">Donate Now</Button>
             </div>
           </div>
-          <div className='sm:w-[570px] mt-12 h-full relative sm:mx-auto'>
-            <img className="w-full h-full object-cover overflow-visible scale-125 lg:scale-100 lg:-mt-12 lg:-ml-56" src="/GardenSVG.svg" alt="A gardener picking radishes from a garden." />
+          <div className='sm:w-[570px] mt-12 h-full relative sm:mx-auto overflow-visible'>
+            <img className="w-full h-full object-cover scale-125 lg:scale-100 lg:-mt-12 lg:-ml-56" src="/GardenSVG.svg" alt="A gardener picking radishes from a garden." />
           </div>
         </div>
       </div>
